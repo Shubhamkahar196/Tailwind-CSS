@@ -24,10 +24,13 @@ export const navbar = () => {
         <div className='logo'>
             finta
         </div>
-        <div>
+        <div className='links'>
             {links.map((link,idx)=>(
-                <a key={link.title} href={link.href}>{link.title}</a>
+                <a key={link.title} className='link-items' href={link.href}>{link.title}</a>
             ))}
+            <button className='btn'>
+                Start free trial
+            </button>
         </div>
     </div>
   )
