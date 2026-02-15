@@ -8,11 +8,22 @@ const Hero = () => {
       </h1>
       <p className=" max-w-3xl text-xl mx-auto mt-10 text-neutral-300 selection:bg-white">
         Say goodbye to the outdated financial tools. Every small business owner,
-        regardless of the background, can now manage their business like a pro.
+        regardless of the <span className="text-primary">background</span>, can now manage their business like a pro.
         Simple. Intuitive. And never boring.
       </p>
-      <div className="flex justify-center mt-8">
-   <button className=" relative rounded-xl px-4 py-2 text-neutral-400 border border-neutral-700 cursor-pointer">Join the Waitlist</button>
+
+      <div className="flex justify-center mt-12 w-full  max-w-lg ">
+        <input
+          type="text"
+          className="mr-4 flex-1 rounded-xl border border-neutral-600 px-4 text-white placeholder:text-neutral-500
+     focus:ring-2 focus:ring-sky-500 focus:outline-none
+      "
+          placeholder="Enter your email"
+        />
+        <button className=" relative rounded-xl px-4 py-2 text-neutral-400 border border-neutral-700 cursor-pointer">
+          <div className="absolute -bottom-px inset-x-0 w-full h-px bg-linear-to-r from-transparent via-sky-600 to-transparent" />
+          Join the Waitlist
+        </button>
       </div>
     </div>
   );
